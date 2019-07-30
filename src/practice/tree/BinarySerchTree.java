@@ -85,7 +85,7 @@ public class BinarySerchTree {
 			}
 			
 			root.data = minValue(root.right);
-			root.right = deleterecursive(root.right, value);
+			root.right = deleterecursive(root.right, root.data);
 		}
 		return root;
 	}
