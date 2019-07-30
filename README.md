@@ -1,0 +1,1 @@
+this is data sturure implementation of linked list,stack,queue,trees,sort algorithm,search algorithm
