@@ -17,8 +17,8 @@ public class Queue<T> {
 	Node<T> last;
 	public void add(T newData) {
 		Node<T> newNode = new Node(newData);
-		if(last != null) {
-			last.next = newNode;
+		if(last!=null) {
+			last.next = newNode;			
 		}
 		last = newNode;
 		if(first == null) {
@@ -45,5 +45,9 @@ public class Queue<T> {
 		qu.add("dd");
 		
 		System.out.println(qu.remove());
+		System.out.println(qu.remove());
+		System.out.println(qu.remove());
+		
+		
 	}
 }

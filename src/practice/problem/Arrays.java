@@ -58,7 +58,7 @@ public class Arrays {
 	}
 	public static void main(String[] args) {
 		Arrays arrays = new Arrays();
-		int arr[]= {9};
+		int arr[]= {1,2,3,5,6,9,9,9};
 		arrays.addOne(arr);
 	}
 }
