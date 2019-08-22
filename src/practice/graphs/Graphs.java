@@ -146,7 +146,7 @@ public class Graphs{
 //		to display all vertices of a graph
 		graphs.displayVertex();
 		System.out.println("breadth first traversel");
-		graphs.BreadthFirstTraversel(graphs, "2");
+		graphs.BreadthFirstTraversel(graphs, "1");
 		System.out.println("depth first search");
 		graphs.DepthFirstTraversel(graphs, "1");
 

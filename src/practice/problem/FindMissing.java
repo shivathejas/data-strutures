@@ -33,7 +33,7 @@ public class FindMissing {
 	}
 	public static void main(String[] args) {
 		FindMissing findMissing = new FindMissing();
-		int arr[]= {1,2,3,4,5,5};
+		int arr[]= {1,2,3,4,4,6};
 		findMissing.findMissAndRepeat(arr);
 	}
 }

@@ -186,9 +186,9 @@ public class BinarySerchTree {
 		  binarySerchTree.insert(8); 
 		  binarySerchTree.insert(2);
 		  binarySerchTree.insert(1);
-		  System.out.println("size of a tree is: "+binarySerchTree.size());
-		  System.out.println("max depth: "+binarySerchTree.maxDepth(binarySerchTree.root.left));
-		  System.out.println("number of leaf nodes are: "+binarySerchTree.getLeafNodes());
+//		  System.out.println("size of a tree is: "+binarySerchTree.size());
+//		  System.out.println("max depth: "+binarySerchTree.maxDepth(binarySerchTree.root.left));
+//		  System.out.println("number of leaf nodes are: "+binarySerchTree.getLeafNodes());
 		  System.out.println("inorder traversel"); 
 		  binarySerchTree.inOrder();
 		  binarySerchTree.delete(5);
