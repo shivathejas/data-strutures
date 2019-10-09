@@ -1,7 +1,7 @@
 package practice.tree;
 
-import practice.problem.Arrays;
-
+//import practice.problem.Arrays;
+import java.util.Arrays;
 public class MinHeap {
 
 	int capacity = 10;
@@ -46,7 +46,7 @@ public class MinHeap {
 	
 	public void ensureArraySize() {
 		if(size == capacity) {
-			items = java.util.Arrays.copyOf(items, capacity*2);
+			items = Arrays.copyOf(items, capacity*2);
 			capacity*=2;
 		}
 	}
@@ -83,7 +83,7 @@ public class MinHeap {
 	public void heapifyDown() {
 		int index=0;
 		while(hasLeaftChild(index)) {
-			int smallerChildIndex = getParentIndex(index);
+			int smallerChildIndex = getLeftChildIndex(index);
 			if(hasRightChild(index) && rightChild(index) < leftChild(index)) {
 				smallerChildIndex = getRightChildIndex(index);
 			}
@@ -103,7 +103,7 @@ public class MinHeap {
 		minHeap.add(20);
 		minHeap.add(17);
 		minHeap.add(25);
-		//System.out.println(minHeap.peek());
+		System.out.println(minHeap.peek());
 		minHeap.poll();
 		System.out.println(minHeap.peek());
 	}

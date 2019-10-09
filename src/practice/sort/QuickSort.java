@@ -7,6 +7,7 @@ public class QuickSort {
 			return;
 		}
 		int pivot  = arr[(left+right)/2];
+		System.out.println((left+right)/2);
 		int index = partition(arr,left,right,pivot);
 		sort(arr,left,index-1);
 		sort(arr,index,right);
@@ -31,7 +32,7 @@ public class QuickSort {
 	}
 	public static void main(String[] args) {
 		QuickSort quickSort = new QuickSort();
-		int arr[] = {6,3,9,8,5,2,7,1};
+		int arr[] = {6,3,9,8,5,2,7,1,4};
 		int right = arr.length-1;
 		int n = arr.length;
 		System.out.println("before sort");

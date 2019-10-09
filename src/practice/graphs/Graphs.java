@@ -104,6 +104,8 @@ public class Graphs{
 			String vertex  = stack.pop();
 			if(!visited.contains(vertex)) {
 				visited.add(vertex);
+				int Q = visited.size();
+				
 				for(Vertex v: graphs.getAdjVertex(vertex)) {
 					stack.push(v.label);
 				}

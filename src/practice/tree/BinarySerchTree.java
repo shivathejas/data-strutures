@@ -11,7 +11,7 @@ public class BinarySerchTree {
 			this.data=data;
 		}
 	}
-	Node root;
+	static Node root;
 
 	public void insert(int value) {
 		root = insertRecursive(root,value);
@@ -124,8 +124,10 @@ public class BinarySerchTree {
 		}
 	}
 //	returns height of a node
-	/*Height of a binary tree can be identified by checking the height of root node or depth of the deepest node
-	*/	public int maxDepth(Node root) {
+	/*Height of a binary tree can be identified by checking the height of 
+	 * root node or depth of the deepest node
+	*/	
+	public int maxDepth(Node root) {
 		if(root==null) {
 			return 0;
 		}else {
@@ -191,12 +193,12 @@ public class BinarySerchTree {
 //		  System.out.println("number of leaf nodes are: "+binarySerchTree.getLeafNodes());
 		  System.out.println("inorder traversel"); 
 		  binarySerchTree.inOrder();
-		  binarySerchTree.delete(5);
+		  //binarySerchTree.delete(5);
 		  System.out.println("inorder traversel after delete"); 
 		  binarySerchTree.inOrder();		  
 		  System.out.println(binarySerchTree.contains(225));
 		  System.out.println("max value: "+binarySerchTree.BSTMaxValue());
-		 
+		  System.out.println("size: "+binarySerchTree.size());
 		
 	}
 }
